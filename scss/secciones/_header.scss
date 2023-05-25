@@ -1,0 +1,88 @@
+//import
+@import "../base/variables";
+@import "../base/mixin";
+@import "../base/extend";
+
+//estilos del header de todos los html
+
+/* estilos body */
+
+body{
+   background-color: #e8dcc7;
+}
+
+/*estilos header*/
+
+.logo-img{
+   margin-top: 1rem;
+   margin-left: 1rem;
+   width: 8rem;
+
+}
+
+.titulo h1{
+   color:#64292b;
+   font-weight: bold;
+}
+
+a{
+   text-decoration: none;
+}
+
+
+.menu{
+    background-color: #bda468;
+   
+     ul li{
+       font-family: $letra;
+       font-weight: bold;
+      }
+   }
+
+
+
+
+/* mq pantalla desktop 1024px*/
+
+@media screen and(min-width:1024px){
+
+   body{
+      background-color: #e8dcc7;
+   }
+   /* estilos header */
+
+ header{
+     @include medidas(100%, 100%);
+   
+     .logo-img{
+       height: 8rem;
+       width: 8rem;
+      }
+  
+    h1{
+       color:#64292b;
+       font-family:Verdana, Geneva, Tahoma, sans-serif;
+       font-weight: bold;
+       font-size: 3rem;
+       width: 40rem;
+       height: 4rem;
+       margin-left: 25rem;
+       margin-top: -6rem;  
+      }
+  
+     .menu{
+       margin-left: 26rem;
+       background-color: #b5a78e;
+       justify-content: center;
+       align-content: center;
+   }
+     
+   ul li{
+      justify-content: center;
+      text-align: center;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-weight: bold;
+      border-right: 2px solid #64292b;
+    }
+  }   
+}

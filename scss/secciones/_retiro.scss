@@ -1,0 +1,69 @@
+//import carpeta base 
+
+@import "../base/mixin";
+@import "../base/extend";
+@import "../base/variables";
+
+
+/* estilos de PUNTOS-RETIRO.HTML*/
+
+/* estilos del main */
+
+section h2{
+    font-size: xx-large;
+}
+.h2-retiro h2{
+    font-size:x-large;
+}
+
+.padre-retiro{
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+
+    .direcciones{
+        width: 20rem;
+        margin-top: 2rem;
+        margin-left: 1rem;
+    }
+
+    .mapa{
+       width: 100%;
+    }
+
+ .h3-retiro{
+      color: rgb(192, 192, 192);
+   }
+}
+
+//media queries
+
+/* mq para la pantalla de tablet 600px - PUNTOS-RETIRO.HTML*/
+
+@media screen and(min-width:600px){
+  
+    /*estilos main*/
+    .direcciones{
+       display: none;
+    }
+
+ /*estilos footer*/
+
+  .color-retiro{
+      background-color: #d6cfc9;
+      margin-left: 1rem;
+    }
+}
+
+/* mq para la pantalla desktop 1024px - PUNTOS-RETIRO.HTML */
+
+@media screen and(min-width:1024px){
+
+    .padre-retiro{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    
+}

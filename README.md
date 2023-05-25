@@ -1,0 +1,5 @@
+Proyecto final
+Para generar el simulador interactivo con el usuario realice una pagina web dedicada a ventas de medias donde cree un producto.json indicando todos los productos y que es llamado medinte fetch en el main.js, aca se selecciona cada media que se quiere comprar, aparece el nombre del producto, el precio y un button agregar al carrito; en la parte superior agregue un link donde te envia al html carrrito para continuar con la compra.
+En el carrito de compras se suma el total de los precios de cada producto seleccionado, con un boton que permite eliminar el producto y otro de vaciar el carrito, agregandole otro link bajo el titulo carrito de compras que redirige a la pagina de productos permitiendole al usuario agregar otros productos si quisiera.
+Tambien tiene un html contacto que tiene un formulario en donde completando los inputs con algunos datos te permite enviar un mensaje de consulta a la pagina. Mostrando un sweet alert dos que la consulta se responde via email.
+Dentro del button comprar ahora se genera un sweet alert dos confirmando la compra. 

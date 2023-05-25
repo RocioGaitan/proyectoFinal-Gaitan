@@ -1,0 +1,44 @@
+
+[
+    {
+      "id": "producto-01",
+      "titulo": "Medias Azul y blancas",
+      "imagen": "../img/medias-azubla.jpg",
+      "precio": 1000
+    },
+  
+    {
+      "id": "producto-02",
+      "titulo": "Medias Homero js",
+      "imagen": "../img/frase-homero.jpg",
+      "precio": 1500
+    },
+  
+    {
+      "id": "producto-03",
+      "titulo": "Medias Grises",
+      "imagen": "../img/medias-gris.jpg",
+      "precio": 1200
+    },
+  
+    {
+      "id": "producto-04",
+      "titulo": "Medias guitarras",
+      "imagen": "../img/medias-guitarra.jpg",
+      "precio": 2000
+    },
+  
+    {
+      "id": "producto-05",
+      "titulo": "Medias Huellas",
+      "imagen": "../img/medias-huellas.jpg",
+      "precio": 1300
+    },
+    
+    {
+      "id": "producto-06",
+      "titulo": "Medias Pancho",
+      "imagen": "../img/medias-salchichas.jpg",
+      "precio": 1600
+    }
+  ]

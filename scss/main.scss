@@ -1,0 +1,21 @@
+/* reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// importar mis archivos de secciones
+
+@import "secciones/header";
+@import "secciones/index";
+@import "secciones/contacto.scss";
+@import "secciones/pagos";
+@import "secciones/retiro";
+@import "secciones/productos";
+@import "secciones/carrito";
+
+
+
+

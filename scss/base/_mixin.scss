@@ -1,0 +1,24 @@
+//mixin
+
+@mixin medidas($ancho, $alto){
+    width: auto;
+    height: auto;
+}
+
+@mixin h2{
+    color: #64292b;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 1rem;
+    background-color: #fff5e3;
+}
+
+@mixin boton{
+    margin-bottom: 3rem;
+    width: 10rem;
+    margin-left: 6.5rem;
+    margin-top: 1rem;
+    text-align: center;
+}

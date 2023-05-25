@@ -1,0 +1,61 @@
+// import carpeta base
+
+@import "../base/extend";
+@import "../base/variables";
+@import "../base/mixin";
+
+.titulo-principal{
+    padding: 2rem;
+}
+
+.carrito-completo{
+    display: flex;
+    flex-direction: column;
+    gap: 2 rem;
+    padding: 1rem;
+}
+
+.boton-carrito{
+    margin-bottom: 2rem;
+    margin-right: 1rem;
+    background-color:rgba(155, 116, 114, 0.993)
+}
+
+.carrito-img{
+  width: 1rem;
+  margin-left: 2rem;
+  border-radius: 1rem;
+}
+
+.carritos-productos{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.carrito-producto{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: 2rem;
+   background-color:antiquewhite;
+   border-radius: 1rem;
+}
+
+.carrito-acciones{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color:rgb(207, 171, 124);
+    gap: 15rem;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+
+
+
+
+

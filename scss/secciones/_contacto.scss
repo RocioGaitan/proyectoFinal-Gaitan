@@ -1,0 +1,49 @@
+// import carpeta base
+
+@import "../base/extend";
+@import "../base/variables";
+@import "../base/mixin";
+
+
+/* estilos de CONTACTO.HTML */
+
+/* estilos main */
+
+.formulario h2{
+    margin: 1rem 1rem 1rem 1rem;
+    text-align: center;
+    font-family: $letra;
+    font-weight: 1rem;
+}
+
+
+// medias queries
+
+/* mq pantalla para tablet 600px - contacto.html */
+
+@media screen and(min-width:600px){
+  
+    /*estilo footer*/
+
+    footer{
+        background-color: #b5a78e;
+    }
+
+}
+
+/* mq pantalla para desktop 1024px - contacto.html */
+
+@media screen and(min-width:1024px){
+
+    /*estilo main*/
+
+     .formulario{
+      margin-top: 3rem;
+     }
+      
+     footer{
+        background-color: #e8dcc7;
+     }
+
+    }
+

@@ -1,0 +1,187 @@
+// import carpeta base
+@import "../base/mixin";
+@import "../base/extend";
+@import "../base/variables";
+
+/* estilos INDEX.HTML */
+
+/*estilos main*/
+
+section{
+    @include h2;
+}
+
+.padre{
+     display: grid;
+     grid-template-columns: 1fr;
+     text-align: center;
+
+ .button{
+     @include boton;
+    }
+
+ .texto{
+     width: 13rem;
+     margin-top: 1rem;
+     margin-left: 5rem;
+     font-weight: bold;
+     font-size: large;
+     font-family:'Times New Roman', Times, serif;
+     text-align: center;
+    }
+}
+
+/*estilos footer*/
+
+ footer{
+    background-color: $color-mq;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    text-align: center;
+    height: 25rem;
+  
+    h3{
+        margin-top: 2rem;
+    }
+
+    .button{
+        height: 4rem;
+    }
+
+}
+
+//media queries
+
+/*mq pantalla para tablet 600px - index.html*/
+
+@media screen and(min-width:600px){
+
+    /*estilo header*/
+ 
+ .titulo h1{
+    font-size: 3rem;
+    text-align: center
+   }
+
+
+    /*estilos main*/
+    
+    h2{
+        @include h2;
+    }
+
+    .padre{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        
+
+        .dos-filas{
+            background-color: #f0e6d9;
+            padding: 2rem;
+            text-align: center;
+        }
+         
+        .img-inicio{
+            width: 20rem;
+        }
+        .texto{
+            background-color: #e8dcc7;
+            width: 13rem;
+            margin-left: 4rem;
+            text-align: center;
+        }
+
+        .button{
+            margin-left: 5rem;
+        }
+    }
+    
+    /* estilos del footer */
+
+    footer{
+        background-color: #e8dcc7;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        text-align: center;
+        
+    }
+
+    h3{
+        text-align: center;
+        font-weight: bold;
+        color: #64292b;
+        background-color: #f4f8ee;
+    }
+   
+    h4{
+        color: $color-secundario;
+    }
+}
+
+
+/*mq pantalla desktop 1024px - index.html*/
+
+@media screen and(min-width:1024px){
+    
+    /*estilos header*/
+    
+    .titulo h1{
+       text-align: center;
+      
+    }
+
+    nav{
+       text-align: right;
+
+        ul li{
+            text-align: center;
+        }
+    }
+    //nesting
+
+     .padre{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      margin-left: 10rem;
+      margin-bottom: 3rem;
+      
+        .dos-filas{
+            width: 73%;
+        } 
+        
+        .img-inicio{
+            margin-top: 1rem;
+        }
+    
+        .texto{
+            height: 5rem;
+            font-weight: bold;
+        }
+    
+      .button{
+        width: 10rem;
+        margin-left: 5rem;
+        margin-top: 1rem;
+        text-align: center;
+     }
+     }
+
+    /* estilos del footer */
+    
+  footer{
+     text-align: center;
+    
+     .h3{
+         font-size: 1.7rem;
+         font-weight: bold;
+         text-decoration: underline;
+        }
+    
+     h4{
+        color: $color-secundario;
+        background-color: #e8dcc7;
+     }
+    }
+}

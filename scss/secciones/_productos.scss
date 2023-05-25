@@ -1,0 +1,83 @@
+//import carpeta base
+
+@import "../base/mixin";
+@import "../base/extend";
+@import "../base/variables";
+
+/*estilos de PRODUCTOS.HTML*/
+
+/*estilos main*/
+.main-productos{
+  padding: 2rem;
+}
+
+.todos-productos{
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr 1fr;
+ gap: 1rem;
+ margin-top: 2rem;
+}
+
+.producto-imagen{
+ max-width: 100%;
+ border-radius: 1rem;
+}
+
+.producto-detalle{
+ background-color: navajowhite;
+ color: black;
+ padding: 1rem;
+ border-radius: 1rem;
+ margin-top: -2rem;    
+ position: relative;
+ display: flex;
+ flex-direction: column;
+ gap: 0.25rem;
+}
+
+.producto-agregar{
+ border: 0;
+ background-color:beige ;
+ border-radius: 1rem;
+ cursor: pointer;
+ text-transform: to-upper-case($string: "");
+}
+
+
+
+//media queries
+
+/* mq pantalla de tablet 600px - PRODUCTOS.HTML
+
+@media screen and(min-width:600px){
+    
+    .h2-productos h2{
+        background-color: $color-principal;
+        margin-bottom: 2rem;
+    }
+    .padre-productos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        text-align: center;
+    }
+
+    h3{
+        background-color: $color-mq;
+    }
+}
+
+/* mq pantalla desktop 1024px - PRODUCTO.HTML
+
+@media screen and(min-width:1024px){
+
+    .padre-productos{
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    .hijo-productos:hover{
+        transform: scale(1.0);
+        background-color: #bda468; 
+    }
+}*/
